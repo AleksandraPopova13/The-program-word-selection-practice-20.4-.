@@ -1,19 +1,11 @@
 def changeText(text):
-"""
-Функция принимает строку с текстом. 
-Убирает все знаки препинания и возвращает
-список, состоящий из слов текста.
-"""
+
     for i in '!"\'#$%&()*+-,/:;<=>?@[\\]^_{|}~':
         text = text.replace(i, '')
         
     return text.split()
 def mostCommon(text, length = 0):
-"""
-Функция принимает список и ограничение по длине.
-Возвращает самый часто встречающийся элемент.
-Если есть несколько элементов с одинаковой самой большой частотой, то вернёт их все.
-"""
+
     most_common = []
     qty_most_common = 0
     
@@ -29,11 +21,7 @@ def mostCommon(text, length = 0):
     return list(set(most_common))
 
 def mostLength(text):
-"""
-Функция принимает список.
-Возвращает самый длинный элемент.
-Если есть несколько элементов с одинаковой самой большой длиной, то вернёт их все.
-"""
+
     most_length = []
     qty_most_length = 0
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
